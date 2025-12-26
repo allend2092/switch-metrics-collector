@@ -53,6 +53,7 @@ Each execution:
 [DELTA] FastEthernet0/45 over 278.0s: in=552B (15.9 bps) out=112747B (3244.5 bps)
 [DELTA] FastEthernet0/47 over 278.0s: in=136855B (3938.3 bps) out=744064B (21411.9 bps)
 [DELTA] FastEthernet0/48 over 278.0s: in=782377B (22514.4 bps) out=181185B (5214.0 bps)
+```
 
 ## Requirements  
   
@@ -88,11 +89,13 @@ An example template is provided in .env.example
 ## Usage
 
 Run a single collection + report cycle:  
-```switchmetrics```  
-  
+```
+switchmetrics
+```
+
 Or equivalently:    
   
-```python -m switchmetrics.cli```  
+```python -m switchmetrics.cli```
   
 To observe meaningful rates, run the command twice with a delay:  
 ```  

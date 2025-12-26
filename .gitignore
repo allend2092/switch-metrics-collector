@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# Local env / secrets
+.env
+
+# Local data artifacts
+data/raw/
+data/db/
+*.sqlite3
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
+.switch_metrics/

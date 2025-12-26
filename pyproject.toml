@@ -1,0 +1,22 @@
+[project]
+name = "switchmetrics"
+version = "0.1.0"
+description = "Collect Cisco IOS interface counters via SSH and store them locally (Phase 1)."
+requires-python = ">=3.10"
+dependencies = [
+  "netmiko>=4.5.0",
+  "python-dotenv>=1.0.1"
+]
+
+[project.scripts]
+switchmetrics = "switchmetrics.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
